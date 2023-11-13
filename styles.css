@@ -12,61 +12,66 @@ body {
   margin: 0;
 } 
 
-
- h1 {
-  text-align: center; 
-}
+  h1 {
+    text-align: center;
+    color: orange;
+    justify-content: center;
+  }
 
 h2 {
   text-align: center;
+  align-self: flex-start;
 }
 
- .slot-outer {
+ .slot-machine {
 width: 40%;
-height: 100vh;
+height: 50%;
 display: flex;
+justify-items: stretch;
 align-items: center;
 align-content: center;
-border: 1px solid #ccc;
+border: 1px solid black;
 padding: 20px;
 border-radius: 10px; 
 } 
 
-.reel1 {
+
+#reel1 {
   height: 50%;
   width: 30%;
   display: flex;
-  background-color: black;
+  justify-content: center;
+  background-color: lightgray;
   margin: 10px;
-
-  
-}
-
-.reel2 {
-  height: 50%;
-  width: 30%;
-  margin: 10px;
-  display: flex;
-  background-color: orange;
 
 }
 
-.reel3 {
+#reel2 {
   height: 50%;
   width: 30%;
   margin: 10px;
   display: flex;
-  background-color: limegreen;
+  justify-content: center;
+  background-color: lightsalmon;
 
 }
 
-#spin-button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: lightblue;
-    border: none;
-    cursor: pointer;
-  }
+#reel3 {
+  height: 50%;
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: lightgreen;
+
+}
+
+.spin-button {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 40%;
+    margin-top: 0%;
+}
 
 
   

@@ -16,10 +16,8 @@ HTML:
 Javascript:
 
 //declare state variables  
-   //reel1 - set to an empty array
-   //reel2 - set to an empty array
-   //reel3 - set to an empty array
-   //current or result  - stores each element of reel1, reel2, reel3 after every spin
+   
+   //result  - stores each element of reel1, reel2, reel3 after every spin
    //win - set to a boolean are all three arrays matching 
 
 //DOM Elements 
@@ -41,3 +39,19 @@ Javascript:
 
 
 //render function
+
+when a user clicks the the spin button, the slot machine generates 3 random results 
+
+use that random number to change the dom 
+
+
+let idx = getRandomNumber(0, IMAGES.length)
+undefined
+idx
+3
+reel1
+<div id=​"reel1">​</div>​flex
+reel1.innerText
+''
+reel1.innerText = idx
+3
