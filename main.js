@@ -38,10 +38,10 @@
     }
 
     function renderJackpot(){
-        if(result[0] !== result[1] || result[2]){
-            win.innerText = "SPIN AGAIN"
-        }else{
+        if(result[0] === result[1] && result[0] === result[2]){
             win.innerText = "JACKPOT!"
+        }else{
+            win.innerText = "SPIN AGAIN"
         }
     }
 
