@@ -26,14 +26,29 @@
         result.push(getRandomNumber(0, IMAGES.length))
         result.push(getRandomNumber(0, IMAGES.length))
         
-        render()
+        setTimeout(() => {
+        render1()
+    }, 500)
+        setTimeout(() => {
+        render2()
+    }, 1500)
+        setTimeout(() => {
+        render3()
         renderJackpot()
+    }, 2500)
+        
     }
 
 // reder looks at state and updates view 
-    function render(){
+    function render1(){
         reel1.innerHTML = result[0]; 
+    }
+
+    function render2(){ 
         reel2.innerHTML = result[1];
+    }
+
+    function render3(){
         reel3.innerHTML = result[2];
     }
 
