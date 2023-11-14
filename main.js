@@ -27,6 +27,7 @@
         result.push(getRandomNumber(0, IMAGES.length))
         
         render()
+        renderJackpot()
     }
 
 // reder looks at state and updates view 
@@ -36,8 +37,15 @@
         reel3.innerHTML = result[2];
     }
 
+    function renderJackpot(){
+        if(result[0] !== result[1] || result[2]){
+            win.innerText = "SPIN AGAIN"
+        }else{
+            win.innerText = "JACKPOT!"
+        }
+    }
+
     function getRandomNumber(min, max){
         return Math.floor(Math.random() * (max - min) + min)
     }
 
-    
