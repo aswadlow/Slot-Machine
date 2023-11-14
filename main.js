@@ -5,7 +5,7 @@
 	/*----- state variables -----*/
 
     
-    let result = [null, null, null, null, null]; 
+    let result = [null, null, null]; 
 
 
 	/*----- cached elements  -----*/ //getting reference to the DOM - link to the view
@@ -16,24 +16,28 @@
     const spinButton = document.querySelector('.spin-button')
 
 	/*----- event listeners -----*/
-     spinButton.addEventListener('click', function(){
-
-    })
+     spinButton.addEventListener('click', initSpin)
 
 	/*----- functions -----*/
 
     function initSpin(){
-        const reel1Idx = getRandomNumber(0, IMAGES.length)
-    
+        result = [];
+        result.push(getRandomNumber(0, IMAGES.length))
+        result.push(getRandomNumber(0, IMAGES.length))
+        result.push(getRandomNumber(0, IMAGES.length))
+        
         render()
     }
 
 // reder looks at state and updates view 
     function render(){
         reel1.innerHTML = result[0]; 
+        reel2.innerHTML = result[1];
+        reel3.innerHTML = result[2];
     }
 
     function getRandomNumber(min, max){
         return Math.floor(Math.random() * (max - min) + min)
-
     }
+
+    
