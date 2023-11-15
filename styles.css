@@ -77,6 +77,12 @@ background-color: gold;
 
 }
 
+image {
+    background-size: cover;
+    max-width: 100%; 
+    max-height: 100%;
+}
+
 button {
     align-self: center;
     color: red; 
@@ -86,14 +92,25 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, clip-path 0.3s ease;   
 } 
 
 button:hover {
     background-color: darkgoldenrod;
+    color:red;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: spin 1s ease-in-out forwards;
+
   }
 
-
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   
  
   

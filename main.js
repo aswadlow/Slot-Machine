@@ -1,7 +1,8 @@
 
 	/*----- constants -----*/
 //array of strings - name them whatever the image is 
-    const IMAGES = [1, 2, 3, 4, 5]
+    const images = ['mac.webp', 'dennis.jpeg', 'frank.webp', 'charlie.avif', 'dee.webp' ]
+
 	/*----- state variables -----*/
 
     
@@ -22,9 +23,9 @@
 
     function initSpin(){
         result = [];
-        result.push(getRandomNumber(0, IMAGES.length))
-        result.push(getRandomNumber(0, IMAGES.length))
-        result.push(getRandomNumber(0, IMAGES.length))
+        result.push(getRandomNumber(0, images.length))
+        result.push(getRandomNumber(0, images.length))
+        result.push(getRandomNumber(0, images.length))
         
         setTimeout(() => {
         render1()
@@ -41,15 +42,16 @@
 
 // reder looks at state and updates view 
     function render1(){
-        reel1.innerHTML = result[0]; 
+        //reel1.src = result[0];
+        reel1.src = images[result[0]]
     }
 
     function render2(){ 
-        reel2.innerHTML = result[1];
+        reel2.src = images[result[1]];
     }
 
     function render3(){
-        reel3.innerHTML = result[2];
+        reel3.src = images[result[2]];
     }
 
     function renderJackpot(){

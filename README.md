@@ -59,7 +59,8 @@ reel1.innerText = idx
 
 Things I want for CSS:
  h1 to have a text outline of gold that is animated 
- the spin button to change to a diamond shape when mouse hovers over 
- each reel to stop spinning in order (maybe a setTimeOut function)
  the reels to be replaced with pictures
  slot machine to have lights that change color while reel is spinng and flash at jackpot 
+
+
+ render needs to target src instead of inner text
