@@ -9,95 +9,110 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: beige;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  background-image: url('pub.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 } 
+
+h3 {
+  font-size: 24px;
+  color: yellow;
+  text-align: center;
+  margin-top: 5%;
+}
 
   h1 {
     text-align: center;
-    color: red;
+    font-size: 100px;
+    color: yellow;
     justify-content: center;
-    margin-bottom: -2%;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: gold; 
+    margin-top: 0;
+    margin-bottom: 5px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: green;
   }
 
 h2 {
+  font-size: 40px;
   text-align: center;
-  color: red; 
+  color: yellow; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: green;
 }
 
  .slot-machine {
-width: 40%;
-height: 50%;
+/* width: 80%; */
+ height: 200px; 
 display: flex;
-justify-items: stretch;
+/* justify-items: stretch; */
+justify-content: center;
 align-items: center;
 align-content: center;
-border: 1px solid black;
-padding: 30px;
+
 border-radius: 10px; 
-background-color: gold; 
+background-color: green; 
+
+background-image: url('pub.jpeg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
 } 
 
 
 #reel1 {
-  height: 50%;
-  width: 30%;
+  height: 200px;
+  width: 150px;
   display: flex;
   justify-content: center;
-  background-color: lightgray;
+  background-color: lightgreen;
   margin: 10px;
-  border: 5px red solid;
+  border: 5px green solid;
 
 }
 
 #reel2 {
-  height: 50%;
-  width: 30%;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: lightsalmon;
-  border: 5px red solid;
-
-}
-
-#reel3 {
-  height: 50%;
-  width: 30%;
+  height: 200px;
+  width: 150px;
   margin: 10px;
   display: flex;
   justify-content: center;
   background-color: lightgreen;
-  border: 5px red solid;
+  border: 5px green solid;
 
 }
 
-image {
-    background-size: cover;
-    max-width: 100%; 
-    max-height: 100%;
+#reel3 {
+  height: 200px;
+  width: 150px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: lightgreen;
+  border: 5px green solid;
 }
+
 
 button {
     align-self: center;
-    color: red; 
-    background-color: gold;
-    padding: 10px 20px;
-    margin-top: 20%;
+    color: beige; 
+    background-color: green;
+    padding: 10px 20px; 
     cursor: pointer;
+    margin-top: 25%;
+    /* margin-bottom: 100%; */
     border: none;
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease, clip-path 0.3s ease;   
 } 
 
 button:hover {
-    background-color: darkgoldenrod;
-    color:red;
+    background-color: green;
+    color:beige;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     animation: spin 1s ease-in-out forwards;
 

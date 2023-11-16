@@ -1,66 +1,19 @@
-PseudoCode Slot Machine:
-* slot machines have 5 symbols on each reel
-*Use while loop - until each array match, player can keep spinning
-*.forEach on arrays? 
 
+ALWAYS SUNNY SLOT MACHINE GAME:
 
-HTML:
-//create header with SLOT MACHINE between the tags
-//<h2 saying - get three in a row to win! 
-//<h3 Winner! 
-//create a div container for the slot machine
-//create three divs inside the container div with id's of reel1, reel2 and reel3
-//create a spin again button
+This Always Sunny In Philadelphia themed slot machine game uses HTML, CSS and JavaScript to display each main character each time you hit the spin button. 
+Just like a casino slot machine game you would find in Vegas, you can try your luck at getting three in a row of your favorite, or most hated character! 
 
+SCREENSHOTS:
 
-Javascript:
+TECHNOLOGIES USED:
+-HTML
+-CSS
+-JavaScript
 
-//declare state variables  
-   
-   //result  - stores each element of reel1, reel2, reel3 after every spin
-   //win - set to a boolean are all three arrays matching 
+GETTING STARTED:
+https://github.com/aswadlow/Slot-Machine
+^ link to game
 
-//DOM Elements 
-   //getelementbyid = reel1
-  //getelementbyid = reel2
- //getelementbyid = reel3
-//addeventlistener = button 
-
-
-//declare functions
- 
-   //spinInit function
-      //use math.random on each array to to generate
-      //push each result into the result array
-      //use a conditional to see if each array element matches
-         //if each  element is the same update win var (h3)
-         //else update h2 - to spin again
-      //render
-
-
-//render function
-
-when a user clicks the the spin button, the slot machine generates 3 random results 
-
-use that random number to change the dom 
-
-
-let idx = getRandomNumber(0, IMAGES.length)
-undefined
-idx
-3
-reel1
-<div id=​"reel1">​</div>​flex
-reel1.innerText
-''
-reel1.innerText = idx
-3
-
-
-Things I want for CSS:
- h1 to have a text outline of gold that is animated 
- the reels to be replaced with pictures
- slot machine to have lights that change color while reel is spinng and flash at jackpot 
-
-
- render needs to target src instead of inner text
+NEXT STEPS:
+Next I will be trying to make the result message more customizable

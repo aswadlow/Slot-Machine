@@ -1,7 +1,7 @@
 
 	/*----- constants -----*/
 //array of strings - name them whatever the image is 
-    const images = ['mac.webp', 'dennis.jpeg', 'frank.webp', 'charlie.avif', 'dee.webp' ]
+    const images = ['fatmac.jpeg', 'dennis.jpeg', 'frank.webp', 'charlie.avif', 'dee.webp' ]
 
 	/*----- state variables -----*/
 
@@ -29,15 +29,14 @@
         
         setTimeout(() => {
         render1()
-    }, 500)
+    }, 300)
         setTimeout(() => {
         render2()
-    }, 1500)
+    }, 1000)
         setTimeout(() => {
         render3()
         renderJackpot()
-    }, 2500)
-        
+    }, 1500)
     }
 
 // reder looks at state and updates view 
