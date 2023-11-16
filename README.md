@@ -6,7 +6,7 @@ Just like a casino slot machine game you would find in Vegas, you can try your l
 
 **SCREENSHOTS:**
 ![Game start](https://i.imgur.com/LTOkYzk.png)
-![Jackpot!](blob:https://imgur.com/b99ca0c4-b066-4fc2-ab3e-59193744a603)
+![Jackpot!](https://i.imgur.com/N2PaWd9.png)
 
 
 **TECHNOLOGIES USED:**
