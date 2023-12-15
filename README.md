@@ -1,5 +1,5 @@
 
-# H1 ALWAYS SUNNY SLOT MACHINE GAME:
+# ALWAYS SUNNY SLOT MACHINE GAME:
 
 This Always Sunny In Philadelphia themed slot machine game uses HTML, CSS and JavaScript to display each main character each time you hit the spin button. 
 Just like a casino slot machine game you would find in Vegas, you can try your luck at getting three in a row of your favorite, or most hated character! 
